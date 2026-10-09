@@ -17,6 +17,7 @@ Build a single-agent tool-using system with Hermes Agent.
 ## Assignment Resources
 
 - [Hermes Agent vs. LangChain Agents Comparison (HERMES_VS_LANGCHAIN.md)](HERMES_VS_LANGCHAIN.md)
+- [Collaborative Workflow — Sequential Researcher → Writer (collaborative_workflow.md)](collaborative_workflow.md)
 
 ### Running the Utility and Tests
 
