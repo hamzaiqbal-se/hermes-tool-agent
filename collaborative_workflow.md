@@ -57,3 +57,11 @@ This is a **sequential two-role workflow**, not successful delegated subagent co
 - `research_notes.md`
 - `final_report.md`
 - `MEMORY.md` (memory persistence)
+
+
+## Memory Verification & Fallback (Task 2 — verified 2026-10-09)
+- Persistent memory saved via `memory` tool (add); stored at `C:/Users/hamza/AppData/Local/hermes/memories/MEMORY.md`.
+- Automatic cross-session injection NOT proven in a genuinely new session (no session-spawn tool available).
+- Reliable fallback: start a new workflow by explicitly reading `MEMORY.md` at the path above before producing reports.
+- Test token saved: `hermes-memory-check-verified-2026-10-09` (harmless, unique). To verify cross-session retrieval: open a new Hermes session and ask neutrally `"What is the Task 2 verification token saved in persistent memory?"` without giving the token.
+- If retrieval fails, use the explicit file-read step; do not claim automatic persistence.
