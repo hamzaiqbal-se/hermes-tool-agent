@@ -33,3 +33,10 @@ python -m unittest -v test_file_analysis.py
 ```
 
 The utility scans the supplied directory, counts files by extension, identifies the largest files, and prints a human‑readable report. The unit tests cover normal scanning, extension counts, largest‑file detection, report formatting, invalid directories, and empty directories. All tests pass on a clean Windows command prompt.
+
+
+## Task 3 — Open-Weight Model Workflow (verified 2026-10-09)
+- Local: Ollama 0.40.1 installed; `qwen2.5:3b` pulled (1.9 GB); inference returned `LOCAL_MODEL_OK`.
+- Cloud: openrouter free tier exists (catalog reference) but NOT configured or verified; no paid API used.
+- Performance: only local tested; cloud comparison not performed (not guaranteed free).
+- Unresolved Task 2: delegation child selected `openrouter/free`; automatic cross-session memory retrieval unproven.
