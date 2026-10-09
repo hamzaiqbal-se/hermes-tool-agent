@@ -1,0 +1,10 @@
+version: "3.8"
+services:
+  file-analysis:
+    image: python:3.13-slim
+    working_dir: /workspace
+    volumes:
+      - ./sample-data:/data:ro
+      - ./file_analysis_agent.py:/workspace/file_analysis_agent.py:ro
+    command: ["python", "/workspace/file_analysis_agent.py", "/data"]
+    # Read-only input; no secrets; no paid APIs; uses existing stdlib code.

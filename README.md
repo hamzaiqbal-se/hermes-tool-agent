@@ -40,3 +40,10 @@ The utility scans the supplied directory, counts files by extension, identifies 
 - Cloud: openrouter free tier exists (catalog reference) but NOT configured or verified; no paid API used.
 - Performance: only local tested; cloud comparison not performed (not guaranteed free).
 - Unresolved Task 2: delegation child selected `openrouter/free`; automatic cross-session memory retrieval unproven.
+
+
+## File-Analysis Docker Workflow (verified 2026-10-09)
+- `docker-compose.file-analysis.yml`: mounts `./sample-data` read-only (`:ro`) to `/data`; uses standard Python slim image.
+- Command: `docker-compose -f docker-compose.file-analysis.yml up --abort-on-container-exit` (syntax validated).
+- Actual container inference: NOT completed — Docker image registry returned 500 / pull timeouts (`python:3.13-slim`, `python:3.11` tested); container did not start. NOT claimed as successful.
+- Read-only mount preserved (`:ro`); no input files modified; no secrets; no cloud APIs.
